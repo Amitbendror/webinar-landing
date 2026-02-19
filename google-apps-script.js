@@ -37,18 +37,18 @@ function sendConfirmationEmail(firstName, email) {
   var meetLink = 'https://meet.google.com/tsa-shxs-knj';
   var webinarTitle = 'Build a Full AI Sales Agent System in Under 1 Hour';
   var webinarDate = 'Thursday, March 5, 2026';
-  var webinarTime = '5:00 PM CET';
+  var webinarTime = '4:00 PM CET';
 
   // Build .ics calendar file
-  // March 5, 2026 5:00 PM CET = 4:00 PM UTC
+  // March 5, 2026 4:00 PM CET = 3:00 PM UTC = 10:00 PM Hanoi
   var icsContent = [
     'BEGIN:VCALENDAR',
     'VERSION:2.0',
     'PRODID:-//Altitude//Webinar//EN',
     'METHOD:REQUEST',
     'BEGIN:VEVENT',
-    'DTSTART:20260305T160000Z',
-    'DTEND:20260305T170000Z',
+    'DTSTART:20260305T150000Z',
+    'DTEND:20260305T160000Z',
     'SUMMARY:' + webinarTitle,
     'DESCRIPTION:Live coding with Claude Code — from zero to a working agentic outbound prospecting system.\\n\\nJoin here: ' + meetLink,
     'LOCATION:' + meetLink,

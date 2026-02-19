@@ -527,7 +527,7 @@
             <p class="hero-sub">Live coding with Claude Code — from zero to a working agentic outbound prospecting system, built right in front of you.</p>
             <div class="hero-meta">
                 <span><span class="dot"></span>Thursday, March 5, 2026</span>
-                <span><span class="dot"></span>5:00 PM CET</span>
+                <span><span class="dot"></span>4:00 PM CET</span>
                 <span><span class="dot"></span>Hosted by Amit Bendror</span>
             </div>
         </div>
@@ -630,9 +630,9 @@
         const WEBINAR_TITLE = 'Build a Full AI Sales Agent System in Under 1 Hour';
         const WEBINAR_DESCRIPTION = 'Live coding with Claude Code — from zero to a working agentic outbound prospecting system.\\n\\nJoin here: ' + MEET_LINK;
         const WEBINAR_LOCATION = MEET_LINK;
-        // March 5, 2026 — 5:00 PM CET (= 4:00 PM UTC)
-        const START_UTC = '20260305T160000Z';
-        const END_UTC   = '20260305T170000Z'; // 1 hour duration
+        // March 5, 2026 — 4:00 PM CET (= 3:00 PM UTC = 10:00 PM Hanoi)
+        const START_UTC = '20260305T150000Z';
+        const END_UTC   = '20260305T160000Z'; // 1 hour duration
 
         // ── Set up calendar links ──
         function setupCalendarLinks() {
@@ -651,8 +651,8 @@
             // Outlook Web
             const outlookParams = new URLSearchParams({
                 rru: 'addevent',
-                startdt: '2026-03-05T16:00:00Z',
-                enddt: '2026-03-05T17:00:00Z',
+                startdt: '2026-03-05T15:00:00Z',
+                enddt: '2026-03-05T16:00:00Z',
                 subject: WEBINAR_TITLE,
                 body: WEBINAR_DESCRIPTION.replace(/\\n/g, '\n'),
                 location: WEBINAR_LOCATION,
